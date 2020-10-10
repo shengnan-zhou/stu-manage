@@ -1,0 +1,59 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #2f4050;
+}
+.aside .profile {
+  padding: 40px 0 30px;
+}
+.aside .profile h4 {
+  color: #a5b0c2;
+  font-size: 16px;
+}
+.aside .avatar {
+  overflow: hidden;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+}
+.aside .navs li {
+  margin: 5px 0;
+}
+.aside .navs li a {
+  display: block;
+  padding: 10px 20px;
+  color: #a5b0c2;
+  text-decoration: none;
+}
+.aside .navs li a.active,
+.aside .navs li a:hover {
+  background-color: #243443;
+}
+.aside .navs li a:before {
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+}
+.aside .navs li i {
+  position: relative;
+  top: 2px;
+  float: right;
+}
+.main {
+  margin-left: 180px;
+  padding: 0 15px;
+}
+.main .navbar-default {
+  margin-left: -15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  background-color: #fff;
+}
+.main .breadcrumb {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}

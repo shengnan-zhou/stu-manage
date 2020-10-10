@@ -1,0 +1,244 @@
+<!--
+ * @Description: 
+ * @Author: shengnan
+ * @Date: 2020-09-12 15:35:03
+ * @LastEditors: shengnan
+ * @LastEditTime: 2020-09-12 19:58:09
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基于Bootstrap的学生后台管理系统</title>
+  <link rel="stylesheet" href="./bootstrap-3.3.7/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/user.css">
+</head>
+<body>
+  <div class="box">
+    <!-- 左侧导航栏 -->
+    <div class="aside">
+      <div class="profile">
+        <div class="avatar center-block">
+          <img src="./images/monkey.png" alt="" class="img-responsive">
+        </div>
+        <h4 class="text-center">程序员</h4>
+      </div>
+      <div class="navs">
+        <ul class="list-unstyled">
+          <li><a href="#" class="glyphicon glyphicon-asterisk active">仪表盘</a></li>
+          <li><a href="#" class="glyphicon glyphicon-plus">用户管理</a></li>
+          <li><a href="#" class="glyphicon glyphicon-envelope">讲师管理</a></li>
+          <li><a href="#" class="glyphicon glyphicon-envelope">课程管理<i class="glyphicon glyphicon-chevron-right"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- 右侧列表内容 -->
+    <div class="main">
+      
+      <!-- 顶部导航 -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">个人中心</a></li>
+              <li><a href="#">退出</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>   
+
+      <!-- 路径导航 -->
+      <ol class="breadcrumb">
+        <li><a href="#">用户管理</a></li>
+        <li class="active">用户列表</li>
+      </ol>
+
+      <!-- 学生信息表格 -->
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <form action="" class="pull-left form-inline">
+            <select name="" id="" class="form-control input-sm">
+              <option value="">按地区</option>
+            </select>
+            <select name="" id="" class="form-control input-sm">
+              <option value="">按年龄</option>
+            </select>
+            <button class="btn btn-sm btn-success">筛选</button>
+          </form>
+          <form action="" class="pull-right form-inline">
+            <div class="input-group">
+              <input type="text" class="form-control input-sm" placeholder="搜一搜" aria-describedby="basic-addon2">
+              <span class="input-group-btn">
+                <button class="btn btn-success btn-sm" type="button">搜索</button>
+              </span>
+            </div>
+          </form>
+        </div>      
+        <!-- Table -->
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <td>编号</td>
+              <td>注册账号</td>
+              <td>昵称</td>
+              <td>年龄</td>
+              <td>性别</td>
+              <td>地区</td>
+              <td>手机号码</td>
+              <td>积分</td>
+              <td>操作</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>abc@sina.com</td>
+              <td>张三</td>
+              <td>18</td>
+              <td>男</td>
+              <td>天津</td>
+              <td>12312345678</td>
+              <td>98</td>
+              <td>
+                <button class="btn btn-xs btn-info">编辑</button>
+                <button class="btn btn-xs btn-warning">删除</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>abc@sina.com</td>
+              <td>张三</td>
+              <td>18</td>
+              <td>男</td>
+              <td>天津</td>
+              <td>12312345678</td>
+              <td>98</td>
+              <td>
+                <button class="btn btn-xs btn-info">编辑</button>
+                <button class="btn btn-xs btn-warning">删除</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>abc@sina.com</td>
+              <td>张三</td>
+              <td>18</td>
+              <td>男</td>
+              <td>天津</td>
+              <td>12312345678</td>
+              <td>98</td>
+              <td>
+                <button class="btn btn-xs btn-info">编辑</button>
+                <button class="btn btn-xs btn-warning">删除</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>abc@sina.com</td>
+              <td>张三</td>
+              <td>18</td>
+              <td>男</td>
+              <td>天津</td>
+              <td>12312345678</td>
+              <td>98</td>
+              <td>
+                <button class="btn btn-xs btn-info">编辑</button>
+                <button class="btn btn-xs btn-warning">删除</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>abc@sina.com</td>
+              <td>张三</td>
+              <td>18</td>
+              <td>男</td>
+              <td>天津</td>
+              <td>12312345678</td>
+              <td>98</td>
+              <td>
+                <button class="btn btn-xs btn-info">编辑</button>
+                <button class="btn btn-xs btn-warning">删除</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>abc@sina.com</td>
+              <td>张三</td>
+              <td>18</td>
+              <td>男</td>
+              <td>天津</td>
+              <td>12312345678</td>
+              <td>98</td>
+              <td>
+                <button class="btn btn-xs btn-info">编辑</button>
+                <button class="btn btn-xs btn-warning">删除</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>abc@sina.com</td>
+              <td>张三</td>
+              <td>18</td>
+              <td>男</td>
+              <td>天津</td>
+              <td>12312345678</td>
+              <td>98</td>
+              <td>
+                <button class="btn btn-xs btn-info">编辑</button>
+                <button class="btn btn-xs btn-warning">删除</button>
+              </td>              
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>abc@sina.com</td>
+              <td>张三</td>
+              <td>18</td>
+              <td>男</td>
+              <td>天津</td>
+              <td>12312345678</td>
+              <td>98</td>
+              <td>
+                <button class="btn btn-xs btn-info">编辑</button>
+                <button class="btn btn-xs btn-warning">删除</button>
+              </td>              
+            </tr>
+          </tbody>
+        </table>
+      </div>   
+      
+      <!-- 分页 -->
+      <ul class="pagination pull-right">
+        <li>
+          <a href="#" aria-label="Previous">
+            上一页
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            下一页
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body> 
+</html>

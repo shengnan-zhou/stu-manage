@@ -1,0 +1,75 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 180px;
+  height: 100%;
+
+  background-color: #2f4050;
+  
+  .profile {
+    padding: 40px 0 30px;
+    h4 {
+      color: #a5b0c2;
+      font-size: 16px;
+    }
+  }
+
+  .avatar {
+    overflow: hidden;
+
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+  }
+
+  .navs {
+    li {
+      margin: 5px 0;
+
+      a {
+        display: block;
+        padding: 10px 20px;
+        color: #a5b0c2;
+        text-decoration: none;
+
+        &.active,
+        &:hover {
+          background-color: #243443;
+        }
+
+        &:before {
+          position: relative;
+          top: 1px;
+          margin-right: 6px;
+        }
+      }
+
+      i {
+        position: relative;
+        top: 2px;
+        float: right;
+      }
+    }
+
+  }
+
+}
+
+.main {
+  margin-left: 180px;
+  padding: 0 15px;
+  .navbar-default{ 
+    margin-left: -15px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+
+    background-color: #fff;
+  }
+  .breadcrumb {
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+}
